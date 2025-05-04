@@ -1,0 +1,35 @@
+{
+  "name": "kushagra-website",
+  "version": "1.0.0",
+  "description": "Official website for Kushagra, an independent pop artist from India.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "Kushagra",
+    "pop",
+    "music",
+    "artist",
+    "website"
+  ],
+  "author": "Kushagra",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-plugin-react": "^7.27.0"
+  },
+  "homepage": "https://kushagra-website.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/kushagra-website.git"
+  }
+}
