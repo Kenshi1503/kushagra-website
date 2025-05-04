@@ -178,26 +178,27 @@ footer {
     background-color: #C13584; /* Slightly darker shade for hover effect */
 }
 
-/* Gallery Styles */
+/* Gallery Section */
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center the images */
-    gap: 20px; /* Add spacing between images */
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between images */
+    margin: 20px auto;
+    max-width: 1400px; /* Limit the gallery width */
+    padding: 0 20px; /* Add padding for smaller screens */
 }
 
 .gallery img {
-    width: 100%; /* Make images span the full width of their container */
-    max-width: 1000px; /* Increase the maximum width for larger screens */
+    width: 100%; /* Make images fill their grid cell */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Optional: Add rounded corners */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Add a more prominent shadow */
-    transition: transform 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
 .gallery img:hover {
-    transform: scale(1.1); /* Slightly larger zoom effect on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
 }
 
 /* Project Gallery Button Styles */
